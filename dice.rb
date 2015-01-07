@@ -10,7 +10,8 @@ class Dice
 		@all_rolls = []
 	end
 	def roll
-		rand(1..@number_of_sides)
+		random = rand(1..@number_of_sides)
+		return random
 		# @roll = roll
 	end
 	def get_rolls
@@ -19,9 +20,18 @@ class Dice
 end
 
 shake = Dice.new 10
-p shake.roll
-p shake.get_rolls
-p shake.get_rolls
-p shake.get_rolls
-p shake.get_rolls
-p shake.get_rolls
+shake.number_of_sides.times do 
+	shake.roll
+	p shake.get_rolls
+end
+
+# p shake.roll
+# p shake.roll
+# p shake.roll
+# p shake.roll
+# p shake.roll
+# p shake.get_rolls
+# p shake.get_rolls
+# p shake.get_rolls
+# p shake.get_rolls
+# p shake.get_rolls

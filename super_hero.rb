@@ -15,4 +15,4 @@ class SuperHero
 end
 
 super_man = SuperHero.new "Clark","Kent"
-p super_man.superPunch
+puts super_man.lastName
